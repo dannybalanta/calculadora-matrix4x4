@@ -1,6 +1,3 @@
-/**
- * inicializa la variable operador y las variables val1 y val2, y numberString
- */
 // llama la función borrar
 function borrar () {
     // llama la función borrar y limpia la memoria
@@ -39,7 +36,7 @@ function calcular () {
         // Realiza la división de lo almacenado en val1 y val2
         basic.showNumber(parseFloat(val1) / parseFloat(val2))
     } else if (operador == "^") {
-        // Realiza la potencia de lo almacenado en val1 y val2
+        // Realiza la potencia de lo almacenado entre val1 y val2 siendo la operación val1 elevado a val2
         basic.showNumber(parseFloat(val1) ** parseFloat(val2))
     }
 }
@@ -140,9 +137,9 @@ function escribeNumeros (key: string) {
     numberString = "" + numberString + key
 }
 /**
- * 07-03-2021
+ * 09-03-2021
  * 
- * Proyecto: Calculadora en micro:bit con teclado de membrana 4 x 4
+ * Proyecto: Calculadora en micro:bit con teclado de membrana 4 x 4 que realiza suma, resta, multiplicación, división y potenciación. Es posible asignar cualquiera otra operación matemática a las teclas A+B de la micro:bit o cambiar lo que hace la tecla B de la micro:bit si se desea.
  * 
  * Autor: Danny Balanta
  * 
@@ -152,7 +149,7 @@ function escribeNumeros (key: string) {
  * 
  * Protoboard de 850 Pines
  * 
- * Adafruit DragonTail o Kittenbot IOBit
+ * Adafruit DragonTail o Kittenbot IOBit v 2.0
  * 
  * Enclosure negro humo para micro:bit
  * 
@@ -199,6 +196,9 @@ function escribeNumeros (key: string) {
  * * = .
  * 
  * # = Es el signo igual =
+ */
+/**
+ * inicializa la variable operador y las variables val1 y val2, y numberString
  */
 let operador = ""
 let val2 = ""
