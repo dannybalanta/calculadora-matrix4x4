@@ -35,6 +35,9 @@ function calcular () {
     } else if (operador == "/") {
         // Realiza la división de lo almacenado en val1 y val2
         basic.showNumber(parseFloat(val1) / parseFloat(val2))
+    } else if (operador == "^") {
+        // Realiza la división de lo almacenado en val1 y val2
+        basic.showNumber(parseFloat(val1) ** parseFloat(val2))
     }
 }
 function buscaTecla () {
@@ -119,6 +122,11 @@ function buscaTecla () {
         evaluarNumero()
         operador = "x"
         basic.showString("x")
+    } else if (input.buttonIsPressed(Button.AB)) {
+        // llama la función evaluarNumero para dar el resultado de la multiplicación
+        evaluarNumero()
+        operador = "^"
+        basic.showString("^")
     } else {
         // limpia la pantalla
         basic.clearScreen()
