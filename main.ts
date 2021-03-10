@@ -1,3 +1,6 @@
+/**
+ * inicializa la variable operador y las variables val1 y val2, y numberString
+ */
 // llama la función borrar
 function borrar () {
     // llama la función borrar y limpia la memoria
@@ -36,7 +39,7 @@ function calcular () {
         // Realiza la división de lo almacenado en val1 y val2
         basic.showNumber(parseFloat(val1) / parseFloat(val2))
     } else if (operador == "^") {
-        // Realiza la división de lo almacenado en val1 y val2
+        // Realiza la potencia de lo almacenado en val1 y val2
         basic.showNumber(parseFloat(val1) ** parseFloat(val2))
     }
 }
@@ -123,7 +126,6 @@ function buscaTecla () {
         operador = "x"
         basic.showString("x")
     } else if (input.buttonIsPressed(Button.AB)) {
-        // llama la función evaluarNumero para dar el resultado de la multiplicación
         evaluarNumero()
         operador = "^"
         basic.showString("^")
@@ -137,9 +139,6 @@ function escribeNumeros (key: string) {
     basic.showString(key)
     numberString = "" + numberString + key
 }
-/**
- * inicializa la variable operador y las variables val1 y val2, y numberString
- */
 /**
  * 07-03-2021
  * 
