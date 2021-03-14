@@ -122,7 +122,7 @@ function buscaTecla () {
         evaluarNumero()
         operador = "x"
         basic.showString("x")
-    } else if (input.buttonIsPressed(Button.AB)) {
+    } else if (input.buttonIsPressed(Button.B)) {
         evaluarNumero()
         operador = "^"
         basic.showString("^")
@@ -214,7 +214,7 @@ basic.forever(function () {
             basic.showString("c")
             borrar()
         }
-        if (input.buttonIsPressed(Button.B)) {
+        if (input.buttonIsPressed(Button.AB)) {
             // muestra la cadena almacenada en val1
             basic.showString(val1)
             // muestra el operador
