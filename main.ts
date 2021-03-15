@@ -1,3 +1,67 @@
+/**
+ * 09-03-2021
+ * 
+ * Proyecto: Calculadora en micro:bit con teclado de membrana 4 x 4 que realiza suma, resta, multiplicación, división y potenciación. Es posible asignar cualquiera otra operación matemática a las teclas A+B de la micro:bit o cambiar lo que hace la tecla B de la micro:bit si se desea.
+ * 
+ * Autor: Danny Balanta
+ * 
+ * Materiales:
+ * 
+ * Teclado de Membrana 4 x 4
+ * 
+ * Protoboard de 850 Pines
+ * 
+ * Adafruit DragonTail o Kittenbot IOBit v 2.0
+ * 
+ * Enclosure negro humo para micro:bit
+ * 
+ * 8 Cables tipo Dupont y 8 cables doble punta tipo jumper
+ * 
+ * Compartimiento de batería 2 x 1.5V AAA con sus baterías incluidas
+ * 
+ * Créditos a: http://www.suppertime.co.uk/blogmywiki/2020/07/microbit-calculator-keypad/
+ * 
+ * Filas:
+ * 
+ * Fila #     / pin asignado en la micro:bit
+ * 
+ * 1.          0
+ * 
+ * 2.          1
+ * 
+ * 3.          2
+ * 
+ * 4           8
+ * 
+ * Columnas:
+ * 
+ * Columna #    / pin asignado en la micro:bit
+ * 
+ * 1.              13
+ * 
+ * 2.              14
+ * 
+ * 3.              15
+ * 
+ * 4.              16
+ * 
+ * Equivalencias del teclado de membrana en las operaciones:
+ * 
+ * A = x
+ * 
+ * B = /
+ * 
+ * C = -
+ * 
+ * D = +
+ * 
+ * * = .
+ * 
+ * # = Es el signo igual =
+ */
+/**
+ * inicializa la variable operador y las variables val1 y val2, y numberString
+ */
 // llama la función borrar
 function borrar () {
     // llama la función borrar y limpia la memoria
@@ -136,70 +200,6 @@ function escribeNumeros (key: string) {
     basic.showString(key)
     numberString = "" + numberString + key
 }
-/**
- * 09-03-2021
- * 
- * Proyecto: Calculadora en micro:bit con teclado de membrana 4 x 4 que realiza suma, resta, multiplicación, división y potenciación. Es posible asignar cualquiera otra operación matemática a las teclas A+B de la micro:bit o cambiar lo que hace la tecla B de la micro:bit si se desea.
- * 
- * Autor: Danny Balanta
- * 
- * Materiales:
- * 
- * Teclado de Membrana 4 x 4
- * 
- * Protoboard de 850 Pines
- * 
- * Adafruit DragonTail o Kittenbot IOBit v 2.0
- * 
- * Enclosure negro humo para micro:bit
- * 
- * 8 Cables tipo Dupont y 8 cables doble punta tipo jumper
- * 
- * Compartimiento de batería 2 x 1.5V AAA con sus baterías incluidas
- * 
- * Créditos a: http://www.suppertime.co.uk/blogmywiki/2020/07/microbit-calculator-keypad/
- * 
- * Filas:
- * 
- * Fila #     / pin asignado en la micro:bit
- * 
- * 1.          0
- * 
- * 2.          1
- * 
- * 3.          2
- * 
- * 4           8
- * 
- * Columnas:
- * 
- * Columna #    / pin asignado en la micro:bit
- * 
- * 1.              13
- * 
- * 2.              14
- * 
- * 3.              15
- * 
- * 4.              16
- * 
- * Equivalencias del teclado de membrana en las operaciones:
- * 
- * A = x
- * 
- * B = /
- * 
- * C = -
- * 
- * D = +
- * 
- * * = .
- * 
- * # = Es el signo igual =
- */
-/**
- * inicializa la variable operador y las variables val1 y val2, y numberString
- */
 let operador = ""
 let val2 = ""
 let val1 = ""
