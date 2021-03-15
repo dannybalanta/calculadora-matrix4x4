@@ -1,7 +1,7 @@
 /**
- * 09-03-2021
+ * 14-03-2021
  * 
- * Proyecto: Calculadora en micro:bit con teclado de membrana 4 x 4 que realiza suma, resta, multiplicación, división y potenciación. Es posible asignar cualquiera otra operación matemática a las teclas A+B de la micro:bit o cambiar lo que hace la tecla B de la micro:bit si se desea.
+ * Proyecto: Calculadora en micro:bit con teclado de membrana 4 x 4 que realiza suma, resta, multiplicación, división y potenciación. Es posible asignar cualquiera otra operación matemática a las teclas A+B ó a la tecla B de la micro:bit o cambiar la operación de la tecla B de la micro:bit si se desea, por ejemplo por un logaritmo, seno, coseno o tangente.
  * 
  * Autor: Danny Balanta
  * 
